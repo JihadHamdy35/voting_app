@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family:   Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+
+}
+body{
+  width: 100%;
+  background-color: rgb(37, 147 ,120);
+}
+body header{
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  padding-left: 3em;
+}
+body header :nth-child(1){
+  color: rgb(0, 255, 97);
+  font-size: 2.5em;
+}
+body header :nth-child(2){
+  color: white;
+  font-size: 2.5em;
+}
+div#add-pov{
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: rgb(19 , 214 , 120);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+div#add-pov img{
+  width: 1.2em;
+}
+div#no-pov div{
+  width: 100%;
+  height: 5em;
+  margin-top: 35vh;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: large;
+  color: rgb(224, 224, 224);
+  font-weight: 600;
+}
+div#add-pop-up div{
+  width: 25em;
+  height: 22em;
+  background-color: rgb(54, 54, 54);
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: calc(50% - 11em);
+  right: calc(50% - 12.5em);
+  padding-top: 1em;
+  border-radius: 10px;
+}
+div#add-pop-up div img{
+  width: 1.5em;
+  display: block;
+  margin-left: 22.5em;
+  cursor: pointer;
+}
+div#add-pop-up div  input.name{
+  width: 85%;
+  min-height: 3em;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgb(43, 43, 43);
+  padding: 0.5em 0.5em;
+  margin-top: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.2em;
+  background-color: rgb(255, 255, 255);
+}
+div#add-pop-up div  textarea{
+  width: 85%;
+  min-height: 8em;
+  font-size: 0.8em;
+  padding: 0.5em 0.5em;
+  margin-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.2em;
+  font-weight: bolder;
+  color: rgb(43, 43, 43);
+}
+div#add-pop-up div  input.submit-btn{
+  width: 5em;
+  height: 2.5em;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: white;
+  background-color: #00ff61;
+  margin-top: 2em;
+  margin-left: 23em;
+  cursor: pointer;
+}
+div#root{
+  width: 90%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+div#root div.POV-div{
+  width: 100%;
+  background-color: rgb(54, 54, 54);
+  margin-top: 2em;
+  color: white;
+  padding: 1.5em;
+  border-radius: 1em;
+}
+div#root div.POV-div h1{
+  font-weight: 900;
+  font-size: 1.7em;
+  color: #00ff61;
+}
+div#root div.POV-div p{
+  width: 100%;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+div#root div.POV-div div{
+  width: fit-content;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+div#root div.POV-div img{
+  width: 1.5em;
+  cursor: pointer;
+}
+div#root div.POV-div span{
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: 0.8em;
+}
+@media screen and (max-width : 450px)  {
+  div#add-pop-up div{
+    width: 90%;
+    height: 20em;
+    top: calc(50% - 10em);
+    right: calc(50% - 45%);
+  }
+  div#add-pop-up div img{
+    margin-left: 86%;
+  }
+  div#add-pop-up div input.submit-btn{
+    margin-left: 75%;
+  }
+}
